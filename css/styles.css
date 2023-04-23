@@ -562,3 +562,36 @@ figcaption.filter-figcaption {
   width: 30px;
   height: 30px;
 }
+
+.newsletter-email {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 78px;
+  padding: 12px 0 0;
+}
+
+.newsletter-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-label h5 {
+  font-size: 14px;
+  line-height: 1.17214;
+  margin-bottom: 20px;
+}
+
+.sign-in-button {
+  color: var(--background-color-primary);
+  background-color: var(--hover-effect);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+  cursor: pointer;
+  padding: 10px 28px 10px 42px;
+  border-radius: 4px;
+  margin-left: 12px;
+  margin-top: 36px;
+  letter-spacing: 0.06em;
+}
