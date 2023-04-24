@@ -232,6 +232,10 @@ footer .contact {
   --card-background: #2196f3e6;
   --backdrop-color: #00000033;
   --modal-close-border: #0000001a;
+  --input-border: #ffffff4d;
+  --sign-in-shadow: #00000026;
+  --form-input-border: #33333333;
+  --comment-placeholder: #75757580;
 }
 
 .container {
@@ -565,7 +569,6 @@ figcaption.filter-figcaption {
 
 .newsletter-email {
   display: flex;
-  align-items: flex-start;
   margin-left: 78px;
   padding: 12px 0 0;
 }
@@ -575,13 +578,20 @@ figcaption.filter-figcaption {
   flex-direction: column;
 }
 
-.newsletter-label h5 {
+.newsletter-label {
   font-size: 14px;
   line-height: 1.17214;
   margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.news-input {
+  display: flex;
+  flex-direction: column;
 }
 
 .sign-in-button {
+  display: flex;
   color: var(--background-color-primary);
   background-color: var(--hover-effect);
   font-family: inherit;
@@ -594,4 +604,86 @@ figcaption.filter-figcaption {
   margin-left: 12px;
   margin-top: 36px;
   letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px var(--sign-in-shadow);
+  height: 50px;
+}
+
+.input-email {
+  width: 358px;
+  height: 50px;
+  border: 1px solid var(--input-border);
+  filter: box-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 16px;
+  padding-left: 16px;
+  color: var(--background-color-primary);
+  background-color: inherit;
+  line-height: 1.25;
+}
+
+.input-email::placeholder {
+  color: var(--contact-color-footer);
+}
+
+.send-icon {
+  display: flex;
+  fill: var(--background-color-primary);
+  margin-left: 24px;
+  margin-top: 3px;
+}
+
+.form-header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color-primary);
+  margin-top: 40px;
+}
+.form-label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  margin-left: 40px;
+  color: var(--text-color-secondary);
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+
+  padding: 11px 12px;
+  border: 1px solid var(--form-input-border);
+  border-radius: 4px;
+  margin: 4px 40px 0 40px;
+  width: 448px;
+  height: 40px;
+}
+
+.input-property {
+  flex: auto;
+  border: none;
+}
+.input-property:focus {
+  outline: none;
+}
+
+.textarea-order {
+  resize: none;
+  display: flex;
+  align-items: center;
+  padding: 11px 12px;
+  border: 1px solid var(--form-input-border);
+  border-radius: 4px;
+  margin: 4px 40px 0 40px;
+  width: 448px;
+  height: 120px;
+  outline: none;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+.textarea-order::placeholder {
+  color: var(--comment-placeholder);
 }

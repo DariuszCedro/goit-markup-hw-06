@@ -83,6 +83,55 @@
                     <use href="./images/icons.svg#close-black"></use>
                   </svg>
                 </button>
+                <form name="order_form" autocomplete="off" novalidate>
+                  <p class="form-header">
+                    Zostaw swoje dane w formularzu poniżej
+                  </p>
+                  <label class="form-label" for="username">Imie</label>
+                  <div class="input-container">
+                    <svg width="18px" height="18px">
+                      <use href="./images/icons.svg#icon-person-black"></use>
+                    </svg>
+                    <input
+                      id="username"
+                      class="input-property"
+                      type="text"
+                      name="username"
+                    />
+                  </div>
+                  <label class="form-label" for="phone">Telefon</label>
+                  <div class="input-container">
+                    <svg width="18px" height="18px">
+                      <use href="./images/icons.svg#icon-phone-black"></use>
+                    </svg>
+                    <input
+                      id="phone"
+                      class="input-property"
+                      type="tel"
+                      name="phone-number"
+                    />
+                  </div>
+                  <label class="form-label" for="email">Email</label>
+                  <div class="input-container">
+                    <svg width="18px" height="18px">
+                      <use href="./images/icons.svg#icon-email-black"></use>
+                    </svg>
+                    <input
+                      id="email"
+                      class="input-property"
+                      type="email"
+                      name="client-email"
+                    />
+                  </div>
+                  <label class="form-label" for="comment">Komentarz</label>
+
+                  <textarea
+                    class="textarea-order"
+                    id="comment"
+                    name="client-comment"
+                    placeholder="Wprowadź tekst"
+                  ></textarea>
+                </form>
               </div>
             </div>
           </div>
@@ -487,13 +536,25 @@
             </div>
           </div>
         </div>
-        <div class="newsletter-email">
-          <label class="newsletter-label"
-            ><h5>ZAPISZ SIĘ DO NEWSLETTERA</h5>
-            <input type="email" name="email" placeholder="E-mail"
-          /></label>
-          <button class="sign-in-button" type="submit">Zapisz się</button>
-        </div>
+        <form class="newsletter-email" name="newsletter">
+          <div class="news-input">
+            <label for="news" class="newsletter-label"
+              >ZAPISZ SIĘ DO NEWSLETTERA</label
+            >
+            <input
+              id="news"
+              class="input-email"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+          </div>
+          <button class="sign-in-button" type="submit">
+            Zapisz się<svg class="send-icon" width="24px" height="24px">
+              <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
