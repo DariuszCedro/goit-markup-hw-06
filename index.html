@@ -83,12 +83,12 @@
                     <use href="./images/icons.svg#close-black"></use>
                   </svg>
                 </button>
-                <form name="order_form" autocomplete="off" novalidate>
+                <form name="order-form" autocomplete="off" novalidate>
                   <p class="form-header">
                     Zostaw swoje dane w formularzu poniżej
                   </p>
                   <label class="form-label" for="username">Imie</label>
-                  <div class="input-container">
+                  <div class="input-container transition-element">
                     <svg width="18px" height="18px">
                       <use href="./images/icons.svg#icon-person-black"></use>
                     </svg>
@@ -100,7 +100,7 @@
                     />
                   </div>
                   <label class="form-label" for="phone">Telefon</label>
-                  <div class="input-container">
+                  <div class="input-container transition-element">
                     <svg width="18px" height="18px">
                       <use href="./images/icons.svg#icon-phone-black"></use>
                     </svg>
@@ -112,7 +112,7 @@
                     />
                   </div>
                   <label class="form-label" for="email">Email</label>
-                  <div class="input-container">
+                  <div class="input-container transition-element">
                     <svg width="18px" height="18px">
                       <use href="./images/icons.svg#icon-email-black"></use>
                     </svg>
@@ -136,7 +136,12 @@
                       type="checkbox"
                       name="policy"
                       class="checkbox-icon"
+                      id="check"
                     />
+                    <label
+                      class="vector transition-element"
+                      for="check"
+                    ></label>
                     <p class="policy-text">
                       Oświadczam iż akceptuję <a href="">Regulamin</a> i
                       <a href="">Politykę Prywatności</a>.
